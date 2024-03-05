@@ -18,18 +18,14 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(amb.mainTb)
         supportActionBar?.title = getString(R.string.app_name)
 
-        amb.estadoCivilSp.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+        amb.UFSpinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
                 id: Long
             ) {
-                if(position == 2){
-                    amb.conjugeLl.visibility = View.VISIBLE
-                }else{
-                    amb.conjugeLl.visibility = View.GONE
-                }
+
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -37,16 +33,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        with(amb){
-            salvarBt.setOnClickListener{
-                "Nome completo: ${nomeEt.text} ${sobrenomeEt.text}".also {
-                    Toast.makeText(
-                        this@MainActivity,
-                        it,
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-        }
+////        with(amb){
+////            salvarBt.setOnClickListener{
+////                "Nome completo: ${nomeEt.text} ${sobrenomeEt.text}".also {
+////                    Toast.makeText(
+////                        this@MainActivity,
+////                        it,
+////                        Toast.LENGTH_SHORT
+////                    ).show()
+////                }
+////            }
+//        }
     }
 }
