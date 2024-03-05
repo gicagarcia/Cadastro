@@ -175,24 +175,24 @@
         app:layout_constraintTop_toBottomOf="@id/UFTv"/>
 
     <Button
-        android:id="@+id/btnSalvar"
+        android:id="@+id/salvarBt"
         android:layout_width="187dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:text="Salvar"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UFSpinner" />
+        app:layout_constraintTop_toBottomOf="@id/UFSpinner" />
 
     <Button
-        android:id="@+id/btnLimpar"
+        android:id="@+id/limparBt"
         android:layout_width="187dp"
         android:layout_height="wrap_content"
         android:text="Limpar"
 
-        app:layout_constraintEnd_toStartOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toStartOf="@id/salvarBt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UFSpinner" />
+        app:layout_constraintTop_toBottomOf="@id/UFSpinner" />
 
 <!--    <Button-->
 <!--        android:id="@+id/salvarBt"-->

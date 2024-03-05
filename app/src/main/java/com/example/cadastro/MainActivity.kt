@@ -33,16 +33,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-////        with(amb){
-////            salvarBt.setOnClickListener{
-////                "Nome completo: ${nomeEt.text} ${sobrenomeEt.text}".also {
-////                    Toast.makeText(
-////                        this@MainActivity,
-////                        it,
-////                        Toast.LENGTH_SHORT
-////                    ).show()
-////                }
-////            }
+//        with(amb){
+//            salvarBt.setOnClickListener{
+//                val pessoa = Formulario
+//                "Nome completo: ${nomeEt.text} ${sobrenomeEt.text}".also {
+//                    Toast.makeText(
+//                        this@MainActivity,
+//                        it,
+//                        Toast.LENGTH_SHORT
+//                    ).show()
+//                }
+//            }
 //        }
     }
 }
