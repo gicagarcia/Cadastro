@@ -121,14 +121,14 @@
             android:id="@+id/masculinoRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Masculino" />
+            android:text="Masculino"
+            android:checked="true"/>
 
         <RadioButton
             android:id="@+id/femininoRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Feminino"
-            android:checked="true"/>
+            android:text="Feminino"/>
 
     </RadioGroup>
 
@@ -193,30 +193,6 @@
         app:layout_constraintEnd_toStartOf="@id/salvarBt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/UFSpinner" />
-
-<!--    <Button-->
-<!--        android:id="@+id/salvarBt"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="5dp"-->
-<!--        android:padding="5dp"-->
-<!--        android:text="Salvar"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/limparBt"-->
-<!--        app:layout_constraintEnd_toStartOf="@id/limparBt"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/sexoRg" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/limparBt"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="5dp"-->
-<!--        android:padding="5dp"-->
-<!--        android:text="Limpar"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/salvarBt"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toEndOf="@id/salvarBt"-->
-<!--        app:layout_constraintTop_toTopOf="@id/salvarBt" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

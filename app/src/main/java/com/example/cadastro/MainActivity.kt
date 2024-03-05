@@ -15,35 +15,28 @@ class MainActivity : AppCompatActivity() {
         amb = ActivityMainBinding.inflate(layoutInflater)
         setContentView(amb.root)
 
-        setSupportActionBar(amb.mainTb)
-        supportActionBar?.title = getString(R.string.app_name)
+        with(amb){
+            salvarBt.setOnClickListener{
+                var sexo = if(sexoRg.checkedRadioButtonId == masculinoRb.id )
+                    masculinoRb.text.toString() else femininoRb.text.toString()
 
-        amb.UFSpinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
+                val pessoa = Formulario(nomeEt.text.toString(), telefoneEt.text.toString(), emailEt.text.toString(), comunicacaoCb.isChecked, sexo, cidadeEt.text.toString(), UFSpinner.selectedItem.toString())
+                Toast.makeText(
+                    this@MainActivity,
+                    pessoa.toString(),
+                    Toast.LENGTH_SHORT
+                ).show()
+                }
 
+            limparBt.setOnClickListener{
+                nomeEt.text.clear()
+                telefoneEt.text.clear()
+                emailEt.text.clear()
+                comunicacaoCb.isChecked = false
+                sexoRg.check(masculinoRb.id)
+                cidadeEt.text.clear()
+                UFSpinner.setSelection(0)
             }
-
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
             }
         }
-
-//        with(amb){
-//            salvarBt.setOnClickListener{
-//                val pessoa = Formulario
-//                "Nome completo: ${nomeEt.text} ${sobrenomeEt.text}".also {
-//                    Toast.makeText(
-//                        this@MainActivity,
-//                        it,
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//                }
-//            }
-//        }
     }
-}
