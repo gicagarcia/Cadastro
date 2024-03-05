@@ -4,8 +4,8 @@ import android.provider.ContactsContract
 
 class Formulario (
     var nome: String,
-    var telefone: ContactsContract.CommonDataKinds.Phone,
-    var email: ContactsContract.CommonDataKinds.Email,
+    var telefone: String,
+    var email: String,
     var comunicacoes: Boolean,
     var sexo: String,
     var cidade: String,
